@@ -24,7 +24,7 @@ public class SpawnerScript : MonoBehaviour
 
     private void Update()
     {
-        //instantiate objects when space down
+        //instantiate objects when space key down
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //get mouse position
