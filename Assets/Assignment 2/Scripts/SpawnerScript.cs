@@ -13,30 +13,12 @@ public class SpawnerScript : MonoBehaviour
 
     //get the dropdown option
     public TMP_Dropdown dropdown;
-
-    //array list for spawned objects
-    public List<GameObject> papers;
-    public List<GameObject> scissors;
-    public List<GameObject> rocks;
-
+    
     //the variable controls the object limits
     public float objectlimits = 20;
 
-    private void Start()
-    {
-        //new array list for the spawned objects
-        papers = new List<GameObject>();
-        scissors = new List<GameObject>();
-        rocks = new List<GameObject>();
-    }
-
     private void Update()
     {
-        //remove the empty elements in the list
-        papers.RemoveAll(GameObject => GameObject == null);
-        scissors.RemoveAll(GameObject => GameObject == null);
-        rocks.RemoveAll(GameObject => GameObject == null);
-
         //instantiate objects when space key down
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -46,33 +28,15 @@ public class SpawnerScript : MonoBehaviour
             //instantiate the object accoding to the dropdown
             if (dropdown.value == 0)
             {
-                if (papers.Count < objectlimits)
-                {
-                    //instantiate paper
-                    GameObject newSpawned = Instantiate(paperPrefab, mousePos, Quaternion.identity);
-                    //add the new spawned object to list
-                    papers.Add(newSpawned);
-                }
+                Instantiate(paperPrefab, mousePos, Quaternion.identity);
             }
             else if (dropdown.value == 1)
             {
-                if (scissors.Count < objectlimits)
-                {
-                    //instantiate scissor
-                    GameObject newSpawned = Instantiate(scissorPrefab, mousePos, Quaternion.identity);
-                    //add the new spawned object to list
-                    scissors.Add(newSpawned);
-                }
+                Instantiate(scissorPrefab, mousePos, Quaternion.identity);
             }
             else if (dropdown.value ==2)
             {
-                if (rocks.Count < objectlimits)
-                {
-                    //instantiate rock
-                    GameObject newSpawned = Instantiate(rockPrefab, mousePos, Quaternion.identity);
-                    //add the new spawned object to list
-                    rocks.Add(newSpawned);
-                }
+                Instantiate(rockPrefab, mousePos, Quaternion.identity);
             }
         }
     }
