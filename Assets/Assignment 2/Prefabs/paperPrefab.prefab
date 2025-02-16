@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2117699056979917859}
   - component: {fileID: 909535488394901392}
+  - component: {fileID: 6552312165069151897}
+  - component: {fileID: 4508419789765898597}
   m_Layer: 0
   m_Name: paperPrefab
   m_TagString: Untagged
@@ -84,3 +86,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6552312165069151897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5505669792251035393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c0efe56dd01460288e535a4593cf60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 7499528922671215730, guid: c92e7e41ae73941108149381c2928bf3, type: 3}
+--- !u!114 &4508419789765898597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5505669792251035393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1738fad499064405b44e257f745e5e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scale: 0
+  speed: 0
