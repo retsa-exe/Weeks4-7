@@ -19,6 +19,9 @@ public class SpawnerScript : MonoBehaviour
     public List<GameObject> scissors;
     public List<GameObject> rocks;
 
+    //the variable controls the object limits
+    public float objectlimits = 20;
+
     private void Start()
     {
         //new array list for the spawned objects
@@ -43,24 +46,33 @@ public class SpawnerScript : MonoBehaviour
             //instantiate the object accoding to the dropdown
             if (dropdown.value == 0)
             {
-                //instantiate paper
-                GameObject newSpawned = Instantiate(paperPrefab, mousePos, Quaternion.identity);
-                //add the new spawned object to list
-                papers.Add(newSpawned);
+                if (papers.Count < objectlimits)
+                {
+                    //instantiate paper
+                    GameObject newSpawned = Instantiate(paperPrefab, mousePos, Quaternion.identity);
+                    //add the new spawned object to list
+                    papers.Add(newSpawned);
+                }
             }
             else if (dropdown.value == 1)
             {
-                //instantiate scissor
-                GameObject newSpawned = Instantiate(scissorPrefab, mousePos, Quaternion.identity);
-                //add the new spawned object to list
-                scissors.Add(newSpawned);
+                if (scissors.Count < objectlimits)
+                {
+                    //instantiate scissor
+                    GameObject newSpawned = Instantiate(scissorPrefab, mousePos, Quaternion.identity);
+                    //add the new spawned object to list
+                    scissors.Add(newSpawned);
+                }
             }
             else if (dropdown.value ==2)
             {
-                //instantiate rock
-                GameObject newSpawned = Instantiate(rockPrefab, mousePos, Quaternion.identity);
-                //add the new spawned object to list
-                rocks.Add(newSpawned);
+                if (rocks.Count < objectlimits)
+                {
+                    //instantiate rock
+                    GameObject newSpawned = Instantiate(rockPrefab, mousePos, Quaternion.identity);
+                    //add the new spawned object to list
+                    rocks.Add(newSpawned);
+                }
             }
         }
     }
