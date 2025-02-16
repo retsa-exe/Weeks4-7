@@ -14,10 +14,6 @@ public class SpawnerScript : MonoBehaviour
     //get the dropdown option
     public TMP_Dropdown dropdown;
 
-    //inputs from the panel
-    public float speed;
-    public float scale;
-
     //array list for spawned objects
     public List<GameObject> papers;
     public List<GameObject> scissors;
@@ -33,6 +29,11 @@ public class SpawnerScript : MonoBehaviour
 
     private void Update()
     {
+        //remove the empty elements in the list
+        papers.RemoveAll(GameObject => GameObject == null);
+        scissors.RemoveAll(GameObject => GameObject == null);
+        rocks.RemoveAll(GameObject => GameObject == null);
+
         //instantiate objects when space key down
         if (Input.GetKeyDown(KeyCode.Space))
         {
