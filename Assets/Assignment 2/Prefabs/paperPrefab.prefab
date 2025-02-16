@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 909535488394901392}
   - component: {fileID: 6552312165069151897}
   - component: {fileID: 4508419789765898597}
+  - component: {fileID: 645511410710197705}
   m_Layer: 0
   m_Name: paperPrefab
   m_TagString: Untagged
@@ -99,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 7499528922671215730, guid: c92e7e41ae73941108149381c2928bf3, type: 3}
+  speed: 0
 --- !u!114 &4508419789765898597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,3 +115,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scale: 0
   speed: 0
+--- !u!114 &645511410710197705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5505669792251035393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7db79179a1fb455fbe19b4b86fd9343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 638593860922442568, guid: ee1fae898603246f9b0c87ae1d30de9e, type: 3}
+  sr: {fileID: 909535488394901392}

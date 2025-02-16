@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7904791793382124100}
   - component: {fileID: 4382228690025681405}
   - component: {fileID: -6443445052710468412}
+  - component: {fileID: 1059999932450158163}
   m_Layer: 0
   m_Name: scissorPrefab
   m_TagString: Untagged
@@ -98,3 +99,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 7499528922671215730, guid: c92e7e41ae73941108149381c2928bf3, type: 3}
+  speed: 0
+--- !u!114 &1059999932450158163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8822174487460728606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7db79179a1fb455fbe19b4b86fd9343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 638593860922442568, guid: ee1fae898603246f9b0c87ae1d30de9e, type: 3}
+  sr: {fileID: 4382228690025681405}
