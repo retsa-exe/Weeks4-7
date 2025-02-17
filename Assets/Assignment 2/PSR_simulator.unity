@@ -615,11 +615,11 @@ MonoBehaviour:
   m_Options:
     m_Options:
     - m_Text: Paper
-      m_Image: {fileID: 21300000, guid: eb72eb901a7ff425a9eb55784d87ee2d, type: 3}
+      m_Image: {fileID: 21300000, guid: 6d684ed05b7ee4a13b67359b049d37c7, type: 3}
     - m_Text: Scissor
-      m_Image: {fileID: 21300000, guid: cead116a8ba6e44038d84b1651649641, type: 3}
+      m_Image: {fileID: 21300000, guid: 54ddfc9fe47e24e8dbc8e7c69774bde7, type: 3}
     - m_Text: Rock
-      m_Image: {fileID: 21300000, guid: 8c77f2529cb894e4d98cd112b4c5f3d7, type: 3}
+      m_Image: {fileID: 21300000, guid: c585979a92ad54653a83c8ab2d6252ab, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1775,7 +1775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.24705882}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.24705882}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2296,8 +2296,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2733,8 +2733,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
