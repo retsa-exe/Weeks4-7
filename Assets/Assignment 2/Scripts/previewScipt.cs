@@ -15,6 +15,6 @@ public class previewScipt : MonoBehaviour
         //get rect Transform component
         RectTransform rt = preview.GetComponent<RectTransform>();
         //change the size with the slider
-        rt.localScale = Vector3.one * slider.value;
+        rt.localScale = Vector3.one * slider.value * 2;
     }
 }

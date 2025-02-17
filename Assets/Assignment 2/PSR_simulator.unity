@@ -615,11 +615,11 @@ MonoBehaviour:
   m_Options:
     m_Options:
     - m_Text: Paper
-      m_Image: {fileID: 21300000, guid: 6d684ed05b7ee4a13b67359b049d37c7, type: 3}
+      m_Image: {fileID: 21300000, guid: 1f3ecda9844804182ba3ad75f7254167, type: 3}
     - m_Text: Scissor
-      m_Image: {fileID: 21300000, guid: 54ddfc9fe47e24e8dbc8e7c69774bde7, type: 3}
+      m_Image: {fileID: 21300000, guid: f5a3d72af660640789880933f9834f83, type: 3}
     - m_Text: Rock
-      m_Image: {fileID: 21300000, guid: c585979a92ad54653a83c8ab2d6252ab, type: 3}
+      m_Image: {fileID: 21300000, guid: ad22a4c60145d4321b3de10c7a8fe6c8, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2977,10 +2977,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 5011037676011739600}
   m_HandleRect: {fileID: 8315902161926314955}
   m_Direction: 0
-  m_MinValue: 0.5
-  m_MaxValue: 1
+  m_MinValue: 0.1
+  m_MaxValue: 0.5
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
