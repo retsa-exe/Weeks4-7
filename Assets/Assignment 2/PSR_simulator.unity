@@ -3236,10 +3236,8 @@ MonoBehaviour:
   scissorPrefab: {fileID: 8822174487460728606, guid: 2515ddfd1e5384ca88f89003ebdaf005, type: 3}
   rockPrefab: {fileID: 4707038706632605037, guid: e7096bb5132e54d80bd1a50be03deea3, type: 3}
   dropdown: {fileID: 245251015}
-  papers: []
-  scissors: []
-  rocks: []
-  objectlimits: 20
+  scaleSlider: {fileID: 588951037785654035}
+  speedSlider: {fileID: 1790011860532440116}
 --- !u!114 &6664363086221804630
 MonoBehaviour:
   m_ObjectHideFlags: 0

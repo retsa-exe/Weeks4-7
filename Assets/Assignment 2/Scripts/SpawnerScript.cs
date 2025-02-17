@@ -14,8 +14,9 @@ public class SpawnerScript : MonoBehaviour
     //get the dropdown option
     public TMP_Dropdown dropdown;
 
-    //scale slider
+    //call sliders
     public Slider scaleSlider;
+    public Slider speedSlider;
 
     //new spawned object
     GameObject newObject;
@@ -45,6 +46,10 @@ public class SpawnerScript : MonoBehaviour
             //change the object scale with the slider value
             float scale = scaleSlider.value;
             newObject.transform.localScale = Vector3.one * scale;
+
+            //change the speed with the slider value
+            movement movement = newObject.GetComponent<movement>();
+            movement.speed = speedSlider.value;
         }
     }
 }

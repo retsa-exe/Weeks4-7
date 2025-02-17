@@ -5,16 +5,12 @@ using UnityEngine.UI;
 
 public class movement : MonoBehaviour
 {
-    //get the slider value
-    public Slider slider;
-
     //object info
     Vector2 direction;
     public float speed;
 
     private void Start()
     {
-        speed = slider.value;
         direction = Random.insideUnitCircle;
     }
 
@@ -22,7 +18,6 @@ public class movement : MonoBehaviour
     {
         //record current position
         Vector2 pos = transform.position;
-        //translate screen position
         Vector2 screenPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
         //add the direction acroding to the speed and direction
         pos += direction * speed * Time.deltaTime;
