@@ -13,9 +13,12 @@ public class SpawnerScript : MonoBehaviour
 
     //get the dropdown option
     public TMP_Dropdown dropdown;
-    
-    //the variable controls the object limits
-    public float objectlimits = 20;
+
+    //scale slider
+    public Slider scaleSlider;
+
+    //new spawned object
+    GameObject newObject;
 
     private void Update()
     {
@@ -28,16 +31,20 @@ public class SpawnerScript : MonoBehaviour
             //instantiate the object accoding to the dropdown
             if (dropdown.value == 0)
             {
-                Instantiate(paperPrefab, mousePos, Quaternion.identity);
+                newObject = Instantiate(paperPrefab, mousePos, Quaternion.identity);
             }
             else if (dropdown.value == 1)
             {
-                Instantiate(scissorPrefab, mousePos, Quaternion.identity);
+                newObject = Instantiate(scissorPrefab, mousePos, Quaternion.identity);
             }
             else if (dropdown.value ==2)
             {
-                Instantiate(rockPrefab, mousePos, Quaternion.identity);
+                newObject = Instantiate(rockPrefab, mousePos, Quaternion.identity);
             }
+
+            //change the object scale with the slider value
+            float scale = scaleSlider.value;
+            newObject.transform.localScale = Vector3.one * scale;
         }
     }
 }
