@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 8c77f2529cb894e4d98cd112b4c5f3d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,7 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c0efe56dd01460288e535a4593cf60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 7499528922671215730, guid: c92e7e41ae73941108149381c2928bf3, type: 3}
   speed: 0
 --- !u!114 &7882661780895956215
 MonoBehaviour:
@@ -112,5 +111,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7db79179a1fb455fbe19b4b86fd9343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: 638593860922442568, guid: ee1fae898603246f9b0c87ae1d30de9e, type: 3}
   sr: {fileID: 1506023151050263863}
