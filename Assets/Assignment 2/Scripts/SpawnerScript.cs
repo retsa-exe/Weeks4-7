@@ -21,6 +21,30 @@ public class SpawnerScript : MonoBehaviour
     //new spawned object
     GameObject newObject;
 
+    //counter variables
+    public int paperCount;
+    public int scissorCount;
+    public int rockCount;
+
+    //call the counter texts
+    public TextMeshProUGUI paperText;
+    public TextMeshProUGUI scissorText;
+    public TextMeshProUGUI rockText;
+
+
+    private void Start()
+    {
+        //initialize the counter
+        paperCount = 0;
+        scissorCount = 0;
+        rockCount = 0;
+
+        //assign the value to the text
+        paperText.text = paperCount.ToString();
+        scissorText.text = scissorCount.ToString();
+        rockText.text = rockCount.ToString();
+    }
+
     private void Update()
     {
         //instantiate objects when space key down
@@ -29,18 +53,24 @@ public class SpawnerScript : MonoBehaviour
             //get mouse position
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            //instantiate the object accoding to the dropdown
+            //instantiate the object accoding to the dropdown, and update counter
             if (dropdown.value == 0)
             {
                 newObject = Instantiate(paperPrefab, mousePos, Quaternion.identity);
+                paperCount++;
+                paperText.text = paperCount.ToString();
             }
             else if (dropdown.value == 1)
             {
                 newObject = Instantiate(scissorPrefab, mousePos, Quaternion.identity);
+                scissorCount++;
+                scissorText.text = scissorCount.ToString();
             }
             else if (dropdown.value ==2)
             {
                 newObject = Instantiate(rockPrefab, mousePos, Quaternion.identity);
+                rockCount++;
+                rockText.text = rockCount.ToString();
             }
 
             //change the object scale with the slider value

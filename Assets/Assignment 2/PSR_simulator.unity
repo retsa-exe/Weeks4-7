@@ -3397,7 +3397,7 @@ GameObject:
   - component: {fileID: 2054732816}
   - component: {fileID: 2054732815}
   m_Layer: 5
-  m_Name: Scissor_number
+  m_Name: Paper_number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4225,6 +4225,12 @@ MonoBehaviour:
   dropdown: {fileID: 245251015}
   scaleSlider: {fileID: 588951037785654035}
   speedSlider: {fileID: 1790011860532440116}
+  paperCount: 0
+  scissorCount: 0
+  rockCount: 0
+  paperText: {fileID: 2054732815}
+  scissorText: {fileID: 406440010}
+  rockText: {fileID: 318516709}
 --- !u!114 &6664363086221804630
 MonoBehaviour:
   m_ObjectHideFlags: 0
